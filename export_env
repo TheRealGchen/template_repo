@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# Path to the .env file
+ENV_FILE=".env"
+
+# Check if the .env file exists
+if [ ! -f "$ENV_FILE" ]; then
+  echo "Error: $ENV_FILE file not found!"
+  exit 1
+fi
+
+# Export each key-value pair from the .env file
+while IFS='=' read -r key value; do
+  # Skip lines starting with '#' (comments) or empty lines
+  if [ "$(echo $key | cut -c1)" = "#" ] || [ -z "$key" ]; then
+    continue
+  fi
+
+  # Remove leading/trailing whitespace from key and value
+  key=$(echo "$key" | xargs)
+  value=$(echo "$value" | xargs)
+
+  # Export the variable
+  export "$key=$value"
+done < "$ENV_FILE"
+
+echo "Environment variables loaded from $ENV_FILE"

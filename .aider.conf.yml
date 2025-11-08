@@ -25,7 +25,7 @@ model: o3
 # API Keys and settings:
 
 ## Specify the OpenAI API key
-openai-api-key: xxx
+# openai-api-key: xxx
 
 ## Specify the Anthropic API key
 # anthropic-api-key: 

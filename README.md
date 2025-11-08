@@ -12,8 +12,12 @@ Fill this out with the details of the specific repo and then replace this README
 mv README.md.template README.md
 ```
 
-
 ### Contributions.md
 
 Style and programming guidelines for the model to use when creating code.
+
+
+### Current_status.md 
+
+A writeup of the current status of the project (useful for if you'll be leaving the project for a bit and need to come back). Can help the model pick back up where the headspace was at last time. 
 
