@@ -1,0 +1,23 @@
+# <project name>
+
+## Description
+
+Describe the goal of the repo so the model knows what it's doing. Use light high level goals 
+
+## Architecture
+
+Describe the overall architecture of the repo. Some things to include:
+* high level overview of file/folder structure
+* infrastucture architecture
+
+## Tests 
+
+Describe how tests are done. A good practice for the AI agents is to test regularly and frequently with unit tests, then can include some larger points on more complicated tests
+
+## Running
+
+How the program is ran and used
+
+## Installing
+
+How to install the environment
